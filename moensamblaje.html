@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M-O - Web Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="moensamblaje.css">
+    <link rel="stylesheet" href="moscript.js">
+    <link rel="shortcut icon" href="img/LogoMOblancoPNG.png" />
+    <script>
+        function copiarCorreo() {
+            const correo = "1240372@alumno.um.edu.mx"; // Reemplaza con tu correo
+            navigator.clipboard.writeText(correo).then(() => {
+                alert("Correo copiado al portapapeles: " + correo);
+            }).catch(err => {
+                console.error("Error al copiar: ", err);
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/LogoMOblancoPNG.png" alt="Logo" class="logomo">
+            <h1>Proyecto Integrador</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="moaboutus.html">Acerca de Nosotros</a></li>
+                <li><a href="#" onclick="copiarCorreo()" class="copy-email">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Ensamblaje del Robot</h2>
+        </div>
+        <video muted autoplay loop>
+            <source src="vid/vecteezy_abstract-plexus-tech-background-with-glowing-blue-shiny_21050150.mp4"
+                type="video/mp4">
+        </video>
+
+    </section>
+
+    <section id="etapa-ensamblaje">
+        <div class="ensamblaje">
+            <div class="img-ensamblaje1">
+                <img src="img/ensamblaje1.jpg" alt="Proceso de Ensamblaje">
+            </div>
+            <div class="texto-ensamblaje">
+                <h2>Diseño 3D</h2>
+                <p>Primeramente, se propuso un diseño en 3d para el robot habiendo obtenido ya las medidas exactas
+                    para su óptimo funcionamiento.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="etapa-ensamblaje2">
+        <div class="ensamblaje2">
+            <div class="img-ensamblaje2">
+                <img src="img/ensamblaje2.jpg" alt="Proceso de Ensamblaje2">
+            </div>
+            <div class="texto-ensamblaje">
+                <h2>Ensamblaje provisional para pruebas</h2>
+                <p>Se nos proporcionó un chasis de pruebas para realizar tests de sensores, motores y funcionamiento
+                    general. Este funcionó como chasis provisional mientras tanto se daba luz verde para la impresión 
+                    3D de nuestro chasis final.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="etapa-ensamblaje3">
+        <div class="ensamblaje3">
+            <div class="img-ensamblaje3">
+                <img src="img/ensamblaje3.jpg" alt="Proceso de Ensamblaje2">
+            </div>
+            <div class="texto-ensamblaje">
+                <h2>Prototipo de pruebas</h2>
+                <p>Los resultados obtenidos con este prototipo fueron bastante buenos en cuanto a conexiones se 
+                    refiere, todo encendía correctamente y no experimentamos sobrecalentamientos ni cortocircuitos.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="etapa-ensamblaje4">
+        <div class="ensamblaje4">
+            <div class="img-ensamblaje4">
+                <img src="img/ensamblaje4.jpg" alt="Proceso de Ensamblaje4">
+            </div>
+            <div class="texto-ensamblaje">
+                <p>Posteriormente añadimos las conexiones para alimentar los motores y conectarlos a la placa base 
+                    para probar el funcionamiento de los motores. Aquí se nos presentó una dificultad, detectamos
+                    que los motores portaban diferente voltaje y tuvimos que reemplazar el de voltaje más bajo.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="etapa-ensamblaje5">
+        <div class="ensamblaje5">
+            <div class="img-ensamblaje5">
+                <img src="img/ensamblaje5.jpg" alt="Proceso de Ensamblaje5">
+            </div>
+            <div class="texto-ensamblaje">
+                <h2>Impresión del chasis final</h2>
+                <p>Finalmente agregamos el sensor delantero en el prototipo para hacer las pruebas de luz y ver que 
+                    funcionara todo bien con el sistema en general usando también un banco de pruebas que tenía una 
+                    plataforma móvil con una línea negra para simular una trayectoria.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="etapa-ensamblaje6">
+        <div class="ensamblaje6">
+            <div class="img-ensamblaje6">
+                <img src="img/ensamblaje6.jpg" alt="Proceso de Ensamblaje6.1">
+                <img src="img/ensamblaje7.jpg" alt="Proceso de Ensamblaje6.2">
+                <img src="img/ensamblaje8.jpg" alt="Proceso de Ensamblaje6.3">
+                <img src="img/ensamblaje9.jpg" alt="Proceso de Ensamblaje6.4">
+            </div>
+            <div class="texto-ensamblaje">
+                <h2>Robot seguidor de línea</h2>
+                <p>Nuestro robot se terminó por ensamblar el 29 de abril de 2025, las pruebas finales se empezaron a 
+                    realizar ese mismo día y para el 31 de abril concretamos una vuelta completa sin perder la línea
+                    en 22 segundos. Asimismo, el 1 de mayo logramos bajar el tiempo de la vuelta a 16 segundos y
+                    nuestro programa final se verá plasmado el 4 de mayo en la etapa de clasificación.          
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="etapa-ensamblaje7">
+        <div class="ensamblaje7">
+            <div class="img-ensamblaje7">
+                <img src="img/ensamblaje11.jpg" alt="Proceso de Ensamblaje7">
+            </div>
+            <div class="texto-ensamblaje">
+                <h2>Robot seguidor de línea</h2>
+                <p>Nuestro robot se terminó por ensamblar el 29 de abril de 2025, las pruebas finales se empezaron a 
+                    realizar ese mismo día y para el 31 de abril concretamos una vuelta completa sin perder la línea
+                    en 22 segundos. Asimismo, el 1 de mayo logramos bajar el tiempo de la vuelta a 16 segundos y
+                    nuestro programa final se verá plasmado el 4 de mayo en la etapa de clasificación.          
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <h3>"Y todo lo que hagáis, hacedlo de corazón, como para el Señor y no para los hombres;
+                sabiendo que del Señor recibiréis la recompensa de la herencia, porque a Cristo el Señor servís".</h3>
+            <h5>
+                <li>Colosenses 3:24-25</li>
+            </h5>
+        </div>
+    </footer>
+
+</body>
+</html>

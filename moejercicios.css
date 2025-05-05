@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald';
+    background-color: #f1f1f1;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px 20px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 0;
+    padding: 5px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logomo {
+    width: 50px;/* Ajusta según el tamaño del logo */
+    height: auto;
+    margin-right: 10px;/* Espaciado entre logo y texto */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    background-color: rgba(128, 128, 128, 0.3);
+}
+
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero {
+    position:static;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    z-index: 0;
+}
+
+
+.hero-text {
+    max-width: 700px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.hero h3 {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;/* Alinear el texto al centro */
+    padding: 20px;/* Espaciado interno */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-content {
+    max-width: 800px;/* Ancho máximo del contenido */
+}
+
+.footer-content h3 {
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.footer-content h5 {
+    margin: 10px;
+    font-family: 'Times New Roman', Times, serif
+}
+
+#etapa-ejercicios {
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Espaciado uniforme */
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.ejercicios {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espaciado entre imagen y texto */
+}
+
+.img-ejercicios1 img {
+    width: 600px;
+    height: auto;
+    border-radius: 5px;
+}
+
+#etapa-ejercicios2 {
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Espaciado uniforme */
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.ejercicios2 {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espaciado entre imagen y texto */
+    flex-direction: row-reverse;
+}
+
+.img-ejercicios2 img {
+    width: 600px;
+    height: auto;
+    border-radius: 5px;
+}
+
+#etapa-ejercicios3 {
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Espaciado uniforme */
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.ejercicios3 {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espaciado entre imagen y texto */
+}
+
+.img-ejercicios3 img {
+    width: 600px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.texto-ejercicios {
+    max-width: 600px; /* Ajusta el ancho del texto */
+}
+
+.texto-ejercicios h2 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.texto-ejercicios p {
+    font-size: 25px;
+    line-height: 1.5;
+    color: #2b2b2b;
+}
+

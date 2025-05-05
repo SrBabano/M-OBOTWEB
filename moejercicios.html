@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M-O - Web Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="moejercicios.css">
+    <link rel="stylesheet" href="moscript.js">
+    <link rel="shortcut icon" href="img/LogoMOblancoPNG.png" />
+    <script>
+        function copiarCorreo() {
+            const correo = "1240372@alumno.um.edu.mx"; //Copia correo de contacto
+            navigator.clipboard.writeText(correo).then(() => {
+                alert("Correo copiado al portapapeles: " + correo);
+            }).catch(err => {
+                console.error("Error al copiar: ", err);
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/LogoMOblancoPNG.png" alt="Logo" class="logomo">
+            <h1>Proyecto Integrador</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="moaboutus.html">Acerca de Nosotros</a></li>
+                <li><a href="#" onclick="copiarCorreo()" class="copy-email">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Ejercicios</h2>
+        </div>
+        <video muted autoplay loop>
+            <source src="vid/vecteezy_abstract-plexus-tech-background-with-glowing-blue-shiny_21050150.mp4"
+                type="video/mp4">
+        </video>
+
+    </section>
+
+    <section id="etapa-ejercicios">
+        <div class="ejercicios">
+            <div class="img-ejercicios1">
+                <img src="img/ejercicios1.jpg" alt="Ejercicios">
+            </div>
+            <div class="texto-ejercicios">
+                <h2>Balance de fuerzas</h2>
+                <p>En esta sección se implementaron conceptos físico-matemáticos para conseguir que el robot
+                    tuviera un buen peso y distribución de componentes. Se buscó obtener la mayor eficiencia
+                    de peso en relación a las dimensiones del prototipo antes de ensamblar.
+                    
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="etapa-ejercicios2">
+        <div class="ejercicios2">
+            <div class="img-ejercicios2">
+                <img src="img/ejercicios2.jpg" alt="Ejercicios">
+            </div>
+            <div class="texto-ejercicios">
+                <h2>Balance de fuerzas</h2>
+                <p>El prototipo inicial del chasis se diseñó con las dimensiones
+                    presentadas en la imagen para cumplir dos objetivos principales:
+                    <b>Eficiencia</b>, para no perder el rastro de la línea, y 
+                    <b>Velocidad</b>, para que el robot haga el menor tiempo en
+                    el circuito.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="etapa-ejercicios3">
+        <div class="ejercicios3">
+            <div class="img-ejercicios3">
+                <img src="img/ejercicios3.jpg" alt="Ejercicios">
+            </div>
+            <div class="texto-ejercicios">
+                <h2>Balance de fuerzas</h2>
+                <p>Teóricamente, este fue el prototipo del chasis junto con cada uno de lo componentes. Se puede apreciar
+                    que buscamos no dejar muchos espacios sin utilizar, sin embargo este modelo resultó ser muy grande
+                    y tampoco tenía un buen acomodo de componentes per sirvió para concretar los modelos finales, puede
+                    revisarlos en la fase de <b>Ensamblaje</b>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <h3>"Y todo lo que hagáis, hacedlo de corazón, como para el Señor y no para los hombres;
+                sabiendo que del Señor recibiréis la recompensa de la herencia, porque a Cristo el Señor servís".</h3>
+            <h5>
+                <li>Colosenses 3:24-25</li>
+            </h5>
+        </div>
+    </footer>
+
+</body>
+</html>

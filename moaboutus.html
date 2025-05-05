@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M-O - Web Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="moaboutus.css">
+    <link rel="stylesheet" href="moscript.js">
+    <link rel="shortcut icon" href="img/LogoMOblancoPNG.png" />
+    <script>
+        function copiarCorreo() {
+            const correo = "1240372@alumno.um.edu.mx"; // Reemplaza con tu correo
+            navigator.clipboard.writeText(correo).then(() => {
+                alert("Correo copiado al portapapeles: " + correo);
+            }).catch(err => {
+                console.error("Error al copiar: ", err);
+            });
+        }
+        </script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/LogoMOblancoPNG.png" alt="Logo" class="logomo">
+            <h1>Proyecto Integrador</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="moaboutus.html">Acerca de Nosotros</a></li>
+                <li><a href="#" onclick="copiarCorreo()" class="copy-email">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Conócenos</h2>
+        </div>
+        <video muted autoplay loop>
+            <source src="vid/vecteezy_abstract-plexus-tech-background-with-glowing-blue-shiny_21050150.mp4"
+                type="video/mp4">
+        </video>
+
+    </section>
+
+    <section id="Aportes" class="Aportes">
+        <h2>Aportaciones individuales por Carrera</h2>
+        <div class="aportes-slider">
+    
+            <!-- Ingeniería en Sistemas Computacionales -->
+            <div class="isc">
+                <h3>Ingeniería en Sistemas Computacionales</h3>
+                <div class="persona">
+                    <img src="img/villa.jpg" alt="Foto de Villa">
+                    <div>
+                        <h4>Isaac Ramsés Villa Álvarez</h4>
+                        <p>
+                            <li>Programación del código</li>
+                            <li>Ensamblaje del robot</li>
+                            <li>Diseño del chasis</li>
+                        </p>
+                    </div>
+                </div>
+                <div class="persona">
+                    <img src="img/dani.jpg" alt="Foto de Daniel">
+                    <div>
+                        <h4>Daniel Saith García López</h4>
+                        <p>
+                            <li>Programación del código</li>
+                            <li>Ensamblaje del robot</li>
+                            <li>Invenstigaciones y documentación</li>
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Ingeniería Industrial y de Sistemas -->
+            <div class="iis">
+                <h3>Ingeniería Industrial y de Sistemas</h3>
+                <div class="persona">
+                    <img src="img/sofi.jpg" alt="Foto de Sofia">
+                    <div>
+                        <h4>Sofia Salazar</h4>
+                        <p>
+                            <li>Diseño e impresión del chasis</li>
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Ingeniería en Gestión de las Tecnologías de la Información y Comunicación -->
+            <div class="igti">
+                <h3>Ingeniería en Gestión de las Tecnologías de la Información y Comunicación</h3>
+                <div class="persona">
+                    <img src="img/dus.jpg" alt="Foto de Dustin">
+                    <div>
+                        <h4>Dustin Samuel Caamal Galicia</h4>
+                        <p>
+                            <li>Desarrollo de la página web</li>
+                            <li>Ensamblaje del robot</li>
+                            <li>Diseño del chasis</li>
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+    
+    
+
+    <footer>
+        <div class="footer-content">
+            <h3>"Y todo lo que hagáis, hacedlo de corazón, como para el Señor y no para los hombres;
+                sabiendo que del Señor recibiréis la recompensa de la herencia, porque a Cristo el Señor servís".</h3>
+                <h5><li>Colosenses 3:24-25</li></h5>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
